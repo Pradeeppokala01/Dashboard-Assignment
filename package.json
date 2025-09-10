@@ -1,7 +1,6 @@
 {
   "name": "dashboard-assignment",
   "version": "1.0.0",
-  "homepage": "https://Pradeeppokala01.github.io/Dashboard-Assignment",
   "private": true,
   "dependencies": {
     "react": "^18.0.0",
