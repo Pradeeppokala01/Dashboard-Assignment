@@ -1,0 +1,168 @@
+/* Basic resets */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f8fb;
+  color: #101828;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 24px 36px;
+  background: #f6f8fb;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f2753;
+  letter-spacing: 0.5px;
+}
+
+.widget-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px;
+}
+
+.widget-card {
+  position: relative;
+  padding: 20px 18px 15px 18px;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(51, 62, 80, 0.07);
+  border-radius: 14px;
+  transition: box-shadow 0.2s;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.widget-card:hover {
+  box-shadow: 0 6px 24px rgba(51, 62, 80, 0.16);
+}
+
+.widget-card strong {
+  color: #25325f;
+  font-size: 1.02rem;
+  margin-bottom: 9px;
+}
+
+.widget-card p {
+  margin-top: 3px;
+  font-size: 0.98rem;
+  color: #5e6c86;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #d81a1a;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove-btn:hover {
+  color: #ba0101;
+}
+
+.add-widget-btn {
+  margin-top: 20px;
+  padding: 8px 0;
+  width: 100%;
+  border: 2px dashed #3874eb;
+  color: #3874eb;
+  background: #edf4ff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.add-widget-btn:hover {
+  background: #3874eb;
+  color: #fff;
+}
+
+.add-widget-form {
+  margin-top: 14px;
+  background: #f4f7fb;
+  border-radius: 8px;
+  padding: 18px 12px;
+  box-shadow: 0 2px 8px #d7e3ee77;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+}
+
+.add-widget-form input {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1.2px solid #c4d3e6;
+  font-size: 1rem;
+}
+
+.add-widget-form button {
+  padding: 8px;
+  border: none;
+  background: #3874eb;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-widget-form button:last-child {
+  background: #b6b7ba;
+  color: #23336c;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.2px solid #dde4ee;
+  margin-bottom: 20px;
+  background: #f7fafd;
+}
+
+.search-results {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  box-shadow: 0 2px 14px rgba(51, 62, 80, 0.07);
+  margin-bottom: 28px;
+}
+
+.search-results h3 {
+  margin-top: 0;
+  color: #2b2c5b;
+}
+
+@media (max-width: 760px) {
+  .widget-list {
+    grid-template-columns: 1fr;
+  }
+  .app {
+    padding: 12px 4px;
+  }
+}
